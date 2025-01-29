@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Layout principal */
+.goku-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Barra de navegación */
+header {
+    background: #222;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem 0;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #f4d03f; /* Amarillo Saiyan */
+}
+
+/* Sección principal */
+.transformation-section {
+    height: 100vh; /* Cada transformación ocupa una pantalla completa */
+    padding: 5rem 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fffbcc; /* Fondo suave dorado */
+    position: relative;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    align-items: center;
+}
+
+.text-container {
+    max-width: 600px;
+}
+
+.text-container h1 {
+    font-size: 3rem;
+    color: #d4af37; /* Dorado Saiyan */
+    margin-bottom: 1rem;
+}
+
+.text-container p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.images-container {
+    position: relative;
+    text-align: center;
+}
+
+.main-image {
+    width: 210px;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+
+}
+
+.main-image:hover {
+    transform: scale(1.2);
+}
+
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: #fff;
+    margin-top: auto; /* Asegura que el footer siempre esté al fondo */
+}
+
+footer a {
+    color: #f4d03f;
+    text-decoration: none;
+}
+
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea a la izquierda */
+    gap: 1rem;
+    flex: 1;
+}
+
+
+.goku-info h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #007BFF;
+}
+
+.goku-info p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.right-content {
+    flex: 1.5; /* Ocupa más espacio */
+    display: flex;
+    justify-content: center;
+}
